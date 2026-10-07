@@ -16,6 +16,16 @@ CONFIG = {
         "@modelcontextprotocol/server-filesystem",
         "C:/Users/DELL/Documents/Programming/project-1-agent-demo/agent-files"
       ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "env": {
+        "MEMORY_FILE_PATH": "C:/Users/DELL/Documents/Programming/project-1-agent-demo/memory.jsonl"
+      }
     }
   }
 }
