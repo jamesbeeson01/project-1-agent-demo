@@ -1,5 +1,15 @@
 import asyncio
 
+# Suppresses a Google SDK warning - likely to change
+import logging
+logging.getLogger("google_genai").setLevel(logging.ERROR)
+logging.getLogger("langchain_google_genai._function_utils").setLevel(logging.ERROR)
+logging.disable(logging.WARNING)
+
+import warnings
+from langchain_core._api import LangChainBetaWarning
+warnings.filterwarnings("ignore", category=LangChainBetaWarning)
+
 from dotenv import load_dotenv
 load_dotenv()
 
