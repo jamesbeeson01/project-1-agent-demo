@@ -36,6 +36,12 @@ CONFIG = {
       "env": {
         "MEMORY_FILE_PATH": "C:/Users/DELL/Documents/Programming/project-1-agent-demo/memory.jsonl"
       }
+    },
+    "docs-langchain": {
+      "url": "https://docs.langchain.com/mcp"
+    },
+    "reference-langchain": {
+      "url": "https://reference.langchain.com/mcp"
     }
   }
 }
