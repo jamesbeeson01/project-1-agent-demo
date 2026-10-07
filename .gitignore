@@ -9,3 +9,6 @@ wheels/
 # Virtual environments
 .venv
 .env
+
+# Video
+project-1-agent-demo-walkthrough-screen-recording.mp4
