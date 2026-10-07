@@ -17,6 +17,8 @@ from langchain.agents import create_agent
 from langgraph.checkpoint.memory import InMemorySaver
 from langchain.mcp import MCPAdapter
 
+from dog_agent import talk_to_dog
+
 CONFIG = {
   "mcpServers": {
     "filesystem": {
@@ -52,7 +54,7 @@ async def main():
 
     agent = create_agent(
         model="google_genai:gemini-flash-lite-latest",
-        tools=tools,
+        tools=[*tools, talk_to_dog],
         system_prompt="You are a helpful assistant",
         checkpointer=InMemorySaver(),
     )
